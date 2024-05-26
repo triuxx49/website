@@ -1,0 +1,133 @@
+html{
+    font-family: 'Montserrat', sans-serif; /*fuente extraida de google font*/
+    color: white;
+}
+header{ /*cabecera*/
+    background-color: #364552; /*color grisacio suave para los botones de la cabecera*/
+    opacity: 0.7;
+    padding: 3rem 2rem;
+    text-align: center; /*centra todo el texto del cabecero*/
+}
+header img.img_izq{ /*cabecera imagen*/
+    float: left; /*se mantiene a la izquierda*/
+    margin-left: 10px; /*tamaño de la imagen*/
+    opacity: 1; /*le quita la difuminacion*/
+}
+header img.img_der{ /*igual que lo anterior pero al otro lado*/
+    float: right;/* lo mantiene a la derecha*/
+    margin-right: 10px; /*le da un pequeño margen*/
+    opacity: 1; /* elimina la opacidad del cabecero sobre la imagen*/
+}
+a.botones_header{
+    font-size: 1.2rem; /*tamaño relativo de la fuente*/
+    margin: 0 1rem; /* margenes de 1rem para que no esten pegados los botones*/
+    color:white; /*establece color blanco sobre las letras*/
+    text-decoration: none; /*elimino el subrayado predeterminado de los enlaces*/
+}
+ul {
+    padding: 0; /* Elimina los borde*/
+    margin: 0; /*elimina los margenes*/
+    font-weight: bold; /*lo pone en negrita*/
+}
+
+ul li {
+    position: center;/*centra cada palabra del cabecero*/
+}
+
+ul li a {
+    text-decoration: none; /*elimina el subrayado predeterminado*/
+    color: white; /*color a las letras de los subtitulos*/
+}
+
+.dropdown {
+    position: center;
+    display: inline-block; /*se ajusta al ancho de su contenido*/
+}
+
+.dropdown-content {
+    display: none; /*permite el despliegue de subtitulos*/
+    position: center; /*lo centra*/
+    background-color: #808080; /*color grisacio para el fondo*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /*muestra los subtitulos*/
+} 
+
+body{
+     margin: 0; /*eliminamos margenes*/
+     background-image: url('img/fondo.jpg');/*foto importada de freepick*/
+     background-size: cover; /*Mantiene la imagen centrada*/
+     background-attachment: fixed; /*podemos mantener la imagen fija mientras bajamos y subimos por la pagina*/
+     text-align: center; /*centra todo el contenido */
+}
+/* Estilo para los párrafos dentro de la sección de artículos en el cuerpo del documento */
+body article p {
+    padding: 0.7rem 10rem; /* Espaciado interno de 0.7rem arriba y abajo, 10rem a la izquierda y derecha */
+    margin: 0.5rem 1rem; /* Margen externo de 0.5rem arriba y abajo, 1rem a la izquierda y derecha */
+    font-size: 1.2rem; /* Tamaño de fuente de 1.2rem */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para los encabezados h1 dentro de la sección de artículos en el cuerpo del documento */
+body article h1 {
+    padding: 1rem 1rem; /* Espaciado interno de 1rem arriba y abajo, 1rem a la izquierda y derecha */
+    font-size: 3.5rem; /* Tamaño de fuente de 3.5rem */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para los encabezados h2 dentro de la sección de artículos en el cuerpo del documento */
+body article h2 {
+    padding: 1rem 1rem; /* Espaciado interno de 1rem arriba y abajo, 1rem a la izquierda y derecha */
+    font-size: 2rem; /* Tamaño de fuente de 2rem */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo específico para los encabezados h2 con clase "preguntas" dentro de la sección de artículos en el cuerpo del documento */
+body article h2.preguntas {
+    background-color: #364552; /* Fondo de color grisáceo */
+    margin-left: 7rem; /* Márgenes izquierdo de 7rem */
+    margin-right: 7rem; /* Márgenes derecho de 7rem */
+    border-radius: 1rem; /* Borde redondeado de 1rem */
+    padding: 0; /* Sin relleno interno */
+    font-size: 1.8rem; /* Tamaño de fuente de 1.8rem */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para los encabezados h3 dentro de la sección de artículos en el cuerpo del documento */
+body article h3 {
+    padding: 0.7rem 10rem; /* Espaciado interno de 0.7rem arriba y abajo, 10rem a la izquierda y derecha */
+    font-size: 1.3rem; /* Tamaño de fuente de 1.3rem */
+    font-weight: bold; /* Texto en negrita */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para los encabezados h4 dentro de la sección de artículos en el cuerpo del documento */
+body article h4 {
+    font-size: 0.8rem; /* Tamaño de fuente de 0.8rem */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Alineación del texto al centro */
+    margin-top: 0; /* Sin margen superior */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #364552; /* Fondo de color grisáceo */
+    opacity: 0.7; /* Opacidad del 70% */
+    margin-top: 1rem; /* Margen superior de 1rem */
+    padding: 0.5rem; /* Relleno interno de 0.5rem */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilo para las imágenes dentro del pie de página en la cabecera */
+footer img.img_izq { /* Estilo para la imagen de la izquierda */
+    float: left; /* Se mantiene a la izquierda del contenedor */
+    margin-left: 10px; /* Margen izquierdo de 10px */
+    opacity: 1; /* Opacidad completa, eliminando cualquier difuminación */
+}
+
+footer img.img_der { /* Estilo para la imagen de la derecha */
+    float: right; /* Se mantiene a la derecha del contenedor */
+    margin-right: 10px; /* Margen derecho de 10px */
+    opacity: 1; /* Opacidad completa, eliminando cualquier difuminación */
+}

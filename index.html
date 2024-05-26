@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="icon" href="/static/img/favicon.ico">
+    <title>Kwluz</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <img class='img_izq' src='/static/img/bombilla.jpg' width="50px" alt='imagen' >
+            <img class='img_der' src='/static/img/bombilla.jpg' width="50px" alt='imagen' >
+            <li class='dropdown'>
+                <a class='botones_header' href="/">Inicio</a>
+            </li>
+            <li class='dropdown'>
+                <a class='botones_header' href="/mercado_electrico">Mercado eléctrico</a>
+                <div class="dropdown-content">
+                    <a href="/mercado_electrico#mercado_mayorista">Mercado mayorista</a> <br>
+                    <a href="/mercado_electrico#mercado_minorista">Mercado minorista</a>
+                </div>
+            </li>
+   
+            <li class='dropdown'>
+                <a class='botones_header' href="/curiosidades">Curiosidades</a>
+                <div class="dropdown-content">
+                    <a href="/curiosidades#el_renacer_de_las_renovables">Renovables</a> <br>
+                    <a href="/curiosidades#el_poder_del_sol">El Sol</a> <br>
+                    <a href="/curiosidades#el_kilovatio_hora">El KWH</a> <br>
+                    <a href="/curiosidades#el_desafio_de_la_eficiencia">La eficiencia</a> <br>
+                    <a href="/curiosidades#redes_inteligentes">Redes inteligentes</a> <br>
+                    <a href="/curiosidades#tecnologias_de_almacenamiento">Almacenamiento</a> <br>
+                </div>
+            </li>
+   
+            <li class='dropdown'>
+                 <a class='botones_header' href="/ahorro_de_energia">Ahorro de energía</a>
+                 <div class="dropdown-content">
+                    <a href="/ahorro_de_energia#eficiencia_en_el_hogar">Hogar</a> <br>
+                    <a href="/ahorro_de_energia#iluminacion_sostenile">Iluminación</a> <br>
+                    <a href="/ahorro_de_energia#uso_inteligente_de_electrodomesticos">Electrodomésticos</a> <br>
+                    <a href="/ahorro_de_energia#conciencia_en_la_oficina">Oficina</a> <br>
+                    <a href="/ahorro_de_energia#transporte_sostenible">Transporte</a> <br>
+                    <a href="/ahorro_de_energia#concientizacion_ambiental_personal">Concientización</a> <br>
+                    <a href="/ahorro_de_energia#usa_calculadoras_de_ahorro">Calculadoras</a> <br>
+                    <a href="/ahorro_de_energia#renovacion_de_equipos_antiguos">Renovación</a> <br>
+                 </div>
+            </li>
+   
+            <li class='dropdown'>
+                <a class='botones_header' href="/impacto_ambiental">Impacto ambiental</a>
+                <div class="dropdown-content">
+                    <a href="/impacto_ambiental#huella_de_carbono">Huella de carbono</a> <br>
+                    <a href="/impacto_ambiental#que_influye">¿Qué influye?</a> <br>
+                    <a href="/impacto_ambiental#nuestra_dieta_y_el_planeta">Nuestra dieta</a> <br>
+                    <a href="/impacto_ambiental#transporte_sostenible">Transporte Sostenible</a> <br>
+                    <a href="/impacto_ambiental#consumo_consciente">Consumo</a> <br>
+                    <a href="/impacto_ambiental#desarrollo_sostenible_y_reduccion">Desarrollo</a> <br>
+                    <a href="/impacto_ambiental#Innovaciones_tecnologicas">Innovaciones</a> <br>
+                    <a href="/impacto_ambiental#cambio_climatico">Cambio climático</a> <br>
+                </div>
+            </li>
+   
+            <li class='dropdown'>
+                <a class='botones_header' href="/preguntas_frecuentes">Preguntas frecuentes</a>
+                <div class="dropdown-content">
+                    <a href="/preguntas_frecuentes#pregunta1">Proceso de liberación</a> <br>
+                    <a href="/preguntas_frecuentes#pregunta2">Principales fuentes</a> <br>
+                    <a href="/preguntas_frecuentes#pregunta3">Calcular mi CO2</a> <br>
+                    <a href="/preguntas_frecuentes#pregunta4">Energía Solar</a> <br>
+                    <a href="/preguntas_frecuentes#pregunta5">Energía renovable</a> <br>
+                    <a href="/preguntas_frecuentes#pregunta6">Cambio Climático</a> <br>
+                    <a href="/preguntas_frecuentes#pregunta7">Tarifas eléctricas</a> <br>
+                    <a href="/preguntas_frecuentes#pregunta8">Inteligencia Artificial</a> <br>
+                </div>
+            </li>  
+        </ul>
+     </header>
+
+     <section>
+        <h2>Visualización de Gráficas</h2>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="archivo">Seleccione un archivo:</label>
+            <input type="file" id="archivo" name="archivo" accept=".TXT">
+            <input type="submit" value="Generar Gráfica">
+        </form>
+
+        {% if imagen %}
+             <h1>Gráfica Ofertada</h1>
+             <img src="data:image/png;base64,{{ imagen }}" alt="Gráfica">
+             <h2>Punto de Casación</h2>
+             <p>Energía de casación: {{ x_interseccion }} MWH, Precio de casación: {{ y_interseccion }} €/MWH</p>
+        {% endif %}
+    </section>
+
+    <section>
+        <article>
+            <div>
+                <p>
+                    En el entramado de conocimiento y aprendizaje que representa mi trayectoria académica en la Universidad de Málaga, he dado forma a un proyecto significativo como culminación de mi formación: Mi Trabajo de Fin de Grado (TFG). Este trabajo no solo refleja mi dedicación y esfuerzo sino que también es un testimonio de la calidad educativa que la Universidad de Málaga proporciona a sus estudiantes.
+                </p>
+                <p>
+                    Mi investigación se ha sumergido en el complejo tejido del sector eléctrico español, explorando sus dinámicas, retos y posibles soluciones. Este proyecto no solo es un ejercicio académico sino también una contribución al entendimiento y mejora de un componente esencial de nuestra sociedad. A través de un enfoque riguroso y comprometido, he buscado desentrañar las complejidades y proponer perspectivas innovadoras en este sector dinámico y en constante evolución.
+                </p>
+                <p>
+                    Te invito a explorar mi trabajo, que representa no solo el esfuerzo individual, sino también un reflejo del entorno educativo y de investigación de la Universidad de Málaga. Este TFG es el resultado de la amalgama de conocimientos adquiridos y enriquecidos por la orientación y apoyo de profesores y mentores.
+                </p>
+                <p>
+                    Adentrarse en las páginas de este proyecto es embarcarse en un viaje a través de la esencia misma del panorama eléctrico español. Agradezco tu interés y espero que encuentres en estas líneas no solo un proyecto académico, sino una mirada profunda a la intersección entre educación, investigación y la compleja realidad del sector eléctrico en nuestro país.
+                </p>
+            </div>
+            
+        </article>
+     </section>
+
+    <footer>
+        <img class='img_izq' src='/static/img/logo_uma.jpg' width="50px" alt='imagen' > 
+        <img class='img_der' src='/static/img/ei.jpg' width="50px" alt='imagen' > 
+        <h2>T.F.G realizado por Edoardo Paba Gaddi</h2>
+     </footer>
+</body>
+</html>
